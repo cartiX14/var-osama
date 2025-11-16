@@ -2,115 +2,60 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>le portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #1e1e2f;
-      color: #f0f0f0;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: #292946;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 3em;
-    }
-
-    section {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    section h2 {
-      border-bottom: 2px solid #444;
-      padding-bottom: 10px;
-      margin-bottom: 20px;
-      color: #ffcc00;
-    }
-
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    ul li::before {
-      content: "✔️";
-      margin-right: 10px;
-      color: #00cc99;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      background-color: #292946;
-      color: #aaa;
-      font-size: 0.9em;
-    }
-
-    a {
-      color: #00ccff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio d'Osama - Passionné de Linux et de l'open source">
+  <meta name="author" content="Osama">
+  <title>Portfolio d'Osama | Développeur & Passionné Linux</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Le portfolio d’Osama 🐧</h1>
-<p>Amateur de Linux et de l'open source</p>
+  <header role="banner">
+    <h1>Le portfolio d'Osama 🐧</h1>
+    <p>Amateur de Linux et de l'open source</p>
   </header>
 
-  <section>
-  <h2>À propos de moi</h2>
-  <p>Salut ! Je suis un passionné de technologies et de programmation. J’ai commencé avec <strong>Debian</strong> et j’ai exploré jusqu’à <strong>Arch Linux</strong>. J’aime comprendre comment les systèmes fonctionnent de l’intérieur, bidouiller, et optimiser les choses.</p>
-  <p>J’adore expérimenter avec des outils open source.</p>
-  <p><em>“Osama” est un pseudonyme que j’utilise en ligne dans mes projets et sur les plateformes de développement.</em></p>
-</section>
+  <main role="main">
+    <section id="about" aria-labelledby="about-title">
+      <h2 id="about-title">À propos de moi</h2>
+      <p>Salut ! Je suis un passionné de technologies et de programmation. J'ai commencé avec <strong>Debian</strong> et j'ai exploré jusqu'à <strong>Arch Linux</strong>. J'aime comprendre comment les systèmes fonctionnent de l'intérieur, bidouiller, et optimiser les choses.</p>
+      <p>J'adore expérimenter avec des outils open source et contribuer à la communauté.</p>
+      <p><em>"Osama" est un pseudonyme que j'utilise en ligne dans mes projets et sur les plateformes de développement.</em></p>
+    </section>
 
-  <section>
-    <h2>Ce que j'aime</h2>
-    <ul>
-      <li>Linux (Debian, Arch, Ubuntu, Kali, fedora)</li>
-      <li>Coder en HTML, CSS, JavaScript</li>
-      <li>Apprendre de nouvelles technos</li>
-      <li>Contribuer à des projets open source</li>
-      <li>Automatiser avec bash / scripts</li>
-    </ul>
-  </section>
+    <section id="interests" aria-labelledby="interests-title">
+      <h2 id="interests-title">Ce que j'aime</h2>
+      <ul>
+        <li>Linux (Debian, Arch, Ubuntu, Kali, Fedora)</li>
+        <li>Coder en HTML, CSS, JavaScript</li>
+        <li>Apprendre de nouvelles technos</li>
+        <li>Contribuer à des projets open source</li>
+        <li>Automatiser avec bash / scripts</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Compétences</h2>
-    <ul>
-      <li>HTML / CSS / JavaScript</li>
-      <li>Git & GitHub</li>
-      <li>Linux (CLI, bash, gestion des paquets)</li>
-      <li>Installation et configuration de systèmes</li>
-      <li>Notions en Python, et SQL</li>
-    </ul>
-  </section>
+    <section id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title">Compétences</h2>
+      <ul>
+        <li>HTML / CSS / JavaScript</li>
+        <li>Git & GitHub</li>
+        <li>Linux (CLI, bash, gestion des paquets)</li>
+        <li>Installation et configuration de systèmes</li>
+        <li>Notions en Python et SQL</li>
+      </ul>
+    </section>
 
-  <section>
-  <h2>Contact</h2>
-  <p>📧 Email : <a href="mailto:osama@example.com">biankannoas@gmail.com</a></p>
-  <p>🔗 GitHub : <a href="https://github.com/cartiX14" target="_blank">cartiX14</a></p>
-  <p>💼 LinkedIn : <a href="https://linkedin.com/in/tonprofil" target="_blank">linkedin.com/in/osama-dev-1bb86a362/</a></p>
-</section>
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p>📧 Email : <a href="mailto:biankannoas@gmail.com" aria-label="Envoyer un email">biankannoas@gmail.com</a></p>
+      <p>🔗 GitHub : <a href="https://github.com/cartiX14" target="_blank" rel="noopener noreferrer" aria-label="Visiter mon profil GitHub">cartiX14</a></p>
+      <p>💼 LinkedIn : <a href="https://www.linkedin.com/in/osama-dev-1bb86a362/" target="_blank" rel="noopener noreferrer" aria-label="Visiter mon profil LinkedIn">osama-dev-1bb86a362</a></p>
+    </section>
+  </main>
 
-  <footer>
-    &copy; 2025 - OsamaPortfolio
+  <footer role="contentinfo">
+    <p>&copy; <span id="year">2025</span> - Portfolio d'Osama</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
-</html> tu mettre comme quoi osama ai un pseudo que j'utilise etc,,
+</html>
